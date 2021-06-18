@@ -7,6 +7,8 @@ class Solution {
 public:
     int movingCount(int m, int n, int k) {
         bool * visited = new bool[m * n];
+        // 使用vector初始化二维数组
+        // vector<vector<bool>> visited(m, vector<bool>(n, 0));
         memset(visited, 0, m * n);
         return dfs(0, 0, k, m, n, visited);
     }
