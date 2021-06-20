@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <climits>
 using namespace std;
 class Solution {
@@ -17,7 +16,7 @@ public:
 private:
     int mod = 1e9 + 7;
     /**
-     * 循环趋于
+     * 循环取余
      * @param x base底数
      * @param a index指数
      * @return 对mod(1e9+7)取余的结果
