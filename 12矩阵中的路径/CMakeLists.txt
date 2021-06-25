@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(12)
+project(12path-in-matrix)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(12 main.cpp)
+add_executable(12path-in-matrix main.cpp)
