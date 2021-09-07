@@ -3,6 +3,7 @@
 using namespace std;
 class Solution {
 public:
+    // 可以优化空间。dp数组可以不用，string s也可以不用。
     int translateNum(int num) {
         string s = to_string(num);
         int sz = s.size();
