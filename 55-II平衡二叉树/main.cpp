@@ -16,10 +16,10 @@ private:
      */
     int recur(TreeNode* root) {
         if (root == nullptr) return 0;
-        int left = recur(root->left);
-        if (left == -1) return -1;
-        int right = recur(root->right);
-        if (right == -1) return -1;
+        int left = recur(root->left); // 左子树的depth
+        if (left == -1) return -1; // 左子树不满足平衡二叉树，提前返回。
+        int right = recur(root->right); // 右子树的depth
+        if (right == -1) return -1; // 右子树不满足平衡二叉树，提前返回。
         return abs(left - right) < 2 ? max(left, right) + 1 : -1;
     }
 };
