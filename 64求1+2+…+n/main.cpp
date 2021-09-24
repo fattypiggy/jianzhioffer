@@ -17,6 +17,7 @@ private:
     static unsigned int N;
     static unsigned int sum;
 };
+// 静态成员一定要在类的外部初始化，否则默认为0。
 unsigned int Calculator::sum = 0;
 unsigned int Calculator::N = 0;
 class Solution {
