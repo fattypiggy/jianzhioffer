@@ -10,8 +10,7 @@ public:
         // isNegative: 数字的符号
         // started: 计算数字是否已经开始，若已经开始，不允许跳过空格
         bool flag = false, isNegative = false, started = false;
-        for (int i = 0; i < str.size(); ++i) {
-            char c = str[i];
+        for (char c : str) {
             if (c >= '0' && c <= '9') {
                 started = true; // 对应测试样例 "   +0 123"
                 num = num * 10 + (c - '0');
@@ -28,7 +27,7 @@ public:
                 flag = true;
                 if (c == '-') isNegative = true;
             }
-            else if (c == ' ' && num == 0 && !started)
+            else if (c == ' ' && !started)
                 continue;
             else
                 break;
